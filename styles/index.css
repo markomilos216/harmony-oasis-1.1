@@ -150,6 +150,19 @@ main{
 .popup-message{
     font-size: 18px;
 }
+.review-section{
+    scroll-margin-top: 95px;
+    position: relative;
+}
+.hide-banner{
+    width: 100%;
+    height: 50px;
+    border: 1px solid red;
+    background-color: inherit;
+    position: absolute;
+    bottom: 25px;
+    
+}
 .form-container .required,
 .form-container label{
     position: relative;
@@ -180,7 +193,7 @@ main{
     resize: none;
     font-family: "Poppins", sans-serif;
 }
-span{
+.form-container span{
     font-size: 13px;
     color: red;
     height: 21px;
