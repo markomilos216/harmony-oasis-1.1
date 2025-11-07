@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+main{
+    font-family: "Poppins", sans-serif;
+}
+.home-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    min-height: 80vh;
+    margin-bottom: 55px;
+}
+.left-side-banner{
+    margin-left: 8%;
+    margin-top: -18px;
+}
+.main-heading{
+    font-size: 50px;
+    font-weight: 500;
+}
+.company-name{
+    font-weight: 700;
+    color: #90723c;
+}
+.right-side-banner img{
+    width: 850px;
+    border-top-left-radius: 85px;
+    border-bottom-left-radius: 85px;
+    margin: 0px -5px 18px;
+    box-shadow: #90723c 0px 5px 15px; 
+}
+.border-line{
+    margin: 57px auto;
+    width: 87%;
+    height: 1px;
+    background-color: #b39763;
+}
+.offer-section-heading,
+.contact-section-heading{
+    font-size: 35px;
+    padding: 0px 0px 65px;
+    text-align: center;
+}
+.offer-section-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+}
+.offer-box{
+    width: 350px;
+    min-height: 405px;
+    box-shadow: 0px 0px 15px 5px #90723c;
+    color: #000;
+}
+.offer-box img{
+    width: 100%;
+}
+.offer-box h3{
+    margin: 8px 0 8px 6px;
+}
+.offer-box p{
+    margin: 0 5px 7px 6px;
+}
+.offer-link-button-container{
+    text-align: center;
+}
+.offer-link-button{
+   display: inline-block;
+   margin: 45px 0;
+   font-size: 19px;
+   text-transform: uppercase;
+   border: 2px solid #90723c;
+   color: #000;
+   padding: 10px 20px;
+   font-weight: bold;
+   background: transparent;
+   position: relative;
+   transition: all 1s;
+   overflow: hidden;
+}
+.banner-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 45px;
+    margin-top: 35px;
+}
+.left-side-contact img{
+    width: 600px;
+}
+.right-side-quote{
+    font-family: "Pacifico", cursive;
+    font-size: 25px;
+    width: 450px;
+}
+.right-side-quote .quote{
+    text-shadow: 1px 5px 10px #ccc;
+}
+.contact-section-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 95px;
+    position: relative;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-section-heading{
+    padding-bottom: 25px;
+}
+.popup-window{
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, scale 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup-window .status-circle{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: -20px auto 20px;
+}
+.popup-heading{
+    font-size: 38px;
+    font-weight: bold;
+}
+.popup-message{
+    font-size: 18px;
+}
+.form-container .required,
+.form-container label{
+    position: relative;
+    font-size: 20px;
+}
+.form-container .required::after{
+    content: '*';
+    font-size: 16px;
+    color: red;
+    position: absolute;
+    margin-left: 3px; 
+}
+.form-container form input,
+.form-container form textarea{
+    width: 500px;
+    height: 35px;
+    font-size: 18px;
+    padding: 2px 5px;
+    outline: none;
+}
+.form-container form input:focus,
+.form-container form textarea:focus{
+    border: 2px solid #90723c;
+}
+.form-container form textarea{
+    width: 500px;
+    height: 150px;
+    resize: none;
+    font-family: "Poppins", sans-serif;
+}
+span{
+    font-size: 13px;
+    color: red;
+    height: 21px;
+}
+.form-container form .personal-data-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.form-container form .personal-data-container input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin: 0; 
+    accent-color: #90723c; 
+    cursor: pointer; 
+}
+#send-order{
+    display: block;
+    margin: 15px auto;
+    width: 30%;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #90723c;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#send-order:hover{
+    background-color: rgba(144, 114, 60, 0.9);
+}
+.more-info-container a{
+    display: flex;
+    align-items: center;
+    color: #90723c;
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+.more-info-container a i{
+    padding-right: 18px;
+}
+.more-info-container a p{
+    color: #000;
+}
+.contact-image{
+    width: 400px;
+    height: 250px;
+}
+/*animations*/
+.hidden-banner-img{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1.2s;
+}
+.show-banner-img{
+    opacity: 1;
+    filter: blur(0);
+}
+.hidden-banner-heading{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show-banner-heading{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.hidden-offer{
+    opacity: 0;
+    transform: translatey(30%);
+    transition: all 1s;
+}
+.show-offer{
+    opacity: 1;
+    transform: translatey(0);
+}
+@media screen and (max-width: 1450px) {
+    .home-banner{
+        background-image: url('../images/banner-image.png');
+        background-size: cover;
+        background-position: center;
+        min-height: 85vh;
+    }
+    .home-banner .left-side-banner .main-heading{
+        color: #fff;
+    }
+    .right-side-banner img{
+        display: none;
+        filter: blur(5px);
+    }
+}
+@media screen and (max-width: 760px){
+    .offer-box{
+        width: 300px;
+        min-height: 355px;
+    }
+    .left-side-contact img{
+        width: 320px;
+        margin-left: 10px;
+    }
+    .right-side-quote .quote{
+        font-size: 28px;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    .form-container label,
+    .form-container .required{
+        font-size: 17px;
+    }
+    .form-container form input,
+    .form-container form textarea{
+        width: 320px;
+        font-size: 15px;
+    }
+    span{
+        font-size: 11px;
+    }
+    .form-container .personal-data-container .personal-data-text{
+        font-size: 14px;
+    }
+    .form-container form .personal-data-containe{
+        gap: 4px;
+    }
+    .form-container form .personal-data-container input[type="checkbox"]{
+        width: 15px;
+        height: 15px;
+    }
+    .form-container form .personal-data-container .personal-data-text{
+        font-size: 13px;
+    }
+    #send-order{
+        width: 40%;
+    }
+    .popup-window{
+        width: 80%;
+        transform: translate(-50%, -150%) scale(0.1);
+        visibility: hidden;
+        transition: transform 0.4s, scale 0.4s;
+    }
+    .open-popup{
+        visibility: visible;
+        transform: translate(-50%, -150%) scale(1);
+    }
+    .popup-window .status-circle{
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .popup-heading{
+        font-size: 30px;
+    }
+    .popup-message{
+        font-size: 15px;
+    }
+    .contact-section-box{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 60px;
+    }
+    .more-info-container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .more-contact-info{
+        max-height: 227px;
+    }
+    .more-info-container a,
+    .more-info-container p{
+        font-size: 15px;
+    }
+    .contact-image{
+        width: 100%;
+        position: relative;
+        z-index: -1;
+        top: -65px;
+    }
+} 
+@media screen and (min-width: 761px){
+    .offer-link-button:hover{
+        color: #fff;
+    }
+    .offer-link-button::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        top: 0;
+        left: -40px;
+        transform: skewX(45deg);
+        background-color: #90723c;
+        z-index: -1;
+        transition: all 1s;
+    }
+    .offer-link-button:hover::before {
+        width: 160%;
+    }
+}

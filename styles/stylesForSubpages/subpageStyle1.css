@@ -1,0 +1,61 @@
+main{
+    min-height: 80vh
+}
+article{
+    font-family: "Poppins", sans-serif;
+    width: 80%;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    font-size: 38px;
+    text-shadow: 5px 5px 5px #ccc;
+    margin-top: 25px;
+    padding-bottom: 45px;
+}
+.main-text{
+    text-align: justify;
+}
+h3{
+    font-size: 30px;
+    margin: 35px 0 5px;
+}
+.content{
+    text-align: justify;
+}
+.content img{
+    float: right;
+    width: 550px;
+    margin-left: 10px;
+}
+.tips-after-massage{
+    padding-top: 12px;
+}
+.tips-after-massage li{
+   margin: 15px 0px 0px 28px;
+}
+
+@media screen and (max-width: 760px) {
+    h1{
+        font-size: 25px;
+        margin-top: 55px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    .main-text,
+    .content{
+        font-size: 14px;
+    }
+    .content img{
+        float: none;
+        width: 100%;
+        padding: 12px 0;
+        margin-left: 0;
+    }
+    .tips-after-massage li{
+        font-size: 14px;
+    }
+}
+
+

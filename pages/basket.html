@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6d664e133f.js" crossorigin="anonymous"></script>
+    <link rel="website icon" type="svg" href="../images/logo.svg">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/basket.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="canonical" href="https://www.harmonyoasis.sk/pages/basket.html"/>
+    <title>Nákupný košík</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="../index.html">
+                    <img src="../images/logo.svg" alt="Harmony&Oasis">
+                </a>
+                <button class="menu-hamburger-icon" aria-label="Hlavné menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <div class="menu-section">
+                <nav class="nav-list hide">
+                    <ul>
+                        <li><a href="./massagesOffer.html">Ponuka masáží</a></li>
+                        <li><a href="./specialPackages.html">Baličky a poukážky</a></li>
+                        <li><a href="./priceList.html">Cenník</a></li>
+                        <li><a href="../#contact-section">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="shopping-basket-container">
+                    <a href="#" class="shopping-basket">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span class="items-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="empty-basket-section hide-content">
+            <img class="empty-basket-img" src="../images/empty-basket.png" alt="Prázdny nákupný košík">
+            <h2 class="empty-basket-heading">Košík je prázdny :(</h2>
+        </section>
+        <section class="basket-table hide-content">
+            <h2 class="basket-heading">Nákupný košík</h2>
+            <table>
+                <thead>
+                    <tr class="table-head">
+                        <th>Číslo</th>
+                        <th>Produkt</th>
+                        <th></th>
+                        <th>Počet</th>
+                        <th>Cena</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="basket-table-items"></tbody>
+            </table>
+            <div class="order-buttons-container">
+                <a href="../pages/specialPackages.html" class="back-to-offer-btn">Späť na ponuku</a>
+                <a href="../pages/submitOrder.html" class="order-continue-btn">Pokračovať v objednávke</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p class="copyright">&copy; Harmony&Oasis 2024</p>
+            <section class="social-icons">
+                <ul class="social-icons-list">
+                    <li><a href="https://www.facebook.com/profile.php?id=61554728084611" aria-label="Facebook Harmony & Oasis Ružomberok"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/harmony_oasis_/" aria-label="Instagram Harmony & Oasis Ružomberok"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+                <section class="personal-data-protection-container">
+                    <a href="../pages/personalDataProtection.html" class="personal-data-protection">Zásady ochrany osobných údajov</a>
+                </section>
+            </section>
+        </div>
+    </footer>
+    <script src="../scripts/animations.js"></script>
+    <script type="module" src="../scripts/setNumberOfPackages.js"></script>
+    <script type="module" src="../scripts/basket.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "title": "Klasická masáž",
+        "description": "Prináša hĺbkové uvoľnenie, odstraňuje únavu, preťaženosť, svalové kŕče, obnovuje pohyblivosť stuhnutých a bolestivých svalov.",
+        "img": "../images/massagesOfferImgs/classic-massage.png",
+        "altDescription": "Klasická masáž",
+        "subpageLink": "./subpages/classicMassage.html"
+    },
+    {
+        "id": 2,
+        "title": "Relaxačná masáž",
+        "description": "Ide o dotyky, trenie, systematické hladenie a tlaky, ktoré sú aplikované plynule po celom tele.",
+        "img": "../images/relax-massage.png",
+        "altDescription": "Relaxačná masáž",
+        "subpageLink": "./subpages/relaxingMassage.html"
+    },
+    {
+        "id": 3,
+        "title": "Športová masáž",
+        "description": "Veľmi podobná klasickej masáži, je však prispôsobená špeciálne pre športovcov a osoby, ktoré podávajú zložitejšie fyzické výkony.",
+        "img": "../images/massagesOfferImgs/sport-massage.png",
+        "altDescription": "Športová masáž",
+        "subpageLink": "./subpages/sportMassage.html"
+    },
+    {
+        "id": 4,
+        "title": "Maderoterapia",
+        "description": "Masážna technika s cieľom tvarovať postavu, za pomoci aplikácie drevených zvonov rôznych veľkosti.",
+        "img": "../images/massagesOfferImgs/madero-therapy.png",
+        "altDescription": "Maderoterapia",
+        "subpageLink": "./subpages/maderotherapy.html"
+    },
+    {
+        "id": 5,
+        "title": "Manuálna lymfodrenáž",
+        "description": "Lymfodrenáž je liečebná a regeneračná metóda, ktorá využíva súbor jemných hmatov.",
+        "img": "../images/massagesOfferImgs/manual-lymfo.png",
+        "altDescription": "Manuálna lymfodrenáž",
+        "subpageLink": "./subpages/manualLympho.html"
+    },
+    {
+        "id": 6,
+        "title": "Reflexná masáž chodidiel",
+        "description": "Reflexná masáž sa zameriava na priame ovplyvňovanie reflexných zón, aby nepriamo ovplyvňovali vnútorné orgány.",
+        "img": "../images/massagesOfferImgs/foot-massage.png",
+        "altDescription": "Reflexná masáž chodidiel",
+        "subpageLink": "./subpages/footMassage.html"
+    },
+    {
+        "id": 7,
+        "title": "Čokoládová masáž",
+        "description": "Čokoládová masáž nielen vyhladzuje, omladzuje a skrášľuje pokožku celého tela, ale taktiež výborne pôsobí na psychiku a zlepšuje náladu.",
+        "img": "../images/chocolate-massage.png",
+        "altDescription": "Čokoládová masáž",
+        "subpageLink": "./subpages/chocolateMassage.html"
+    },
+    {
+        "id": 8,
+        "title": "Pivná chmelová masáž",
+        "description": "Pivné masáže majú liečivé účinky,uvoľňujú svalové napätie, zahrievajú kĺby a podporujú imunitný systém.",
+        "img": "../images/massagesOfferImgs/hops-massage.png",
+        "altDescription": "Pivná chmelová masáž",
+        "subpageLink": "./subpages/hopsMassage.html"
+    },
+    {
+        "id": 9,
+        "title": "Bankovanie",
+        "description": "Priaznivo ovplyvňuje kožu, podkožie, svaly, šľachy, cievny systém a centrálny nervový systém.",
+        "img": "../images/massagesOfferImgs/cupping.png",
+        "altDescription": "Bankovanie",
+        "subpageLink": "./subpages/cupping.html"
+    },
+    {
+        "id": 10,
+        "title": "Rašelinový zábal",
+        "description": "Svojim zložením podporuje prekrvenie ošetrovaného miesta, uvoľňuje unavené a napäté svalstvo, regeneruje ho a zlepšuje jeho činnosť.",
+        "img": "../images/massagesOfferImgs/peat-wrap.png",
+        "altDescription": "Rašelinový zábal",
+        "subpageLink": "./subpages/peatWrap.html"
+    },
+    {
+        "id": 11,
+        "title": "Aromaterapia",
+        "description": "Aromaterapia zahŕňa používanie esenciálnych olejov a iných prírodných aromatických látok pre fyzickú, psychickú a duševnú pohodu.",
+        "img": "../images/essencial-oils.png",
+        "altDescription": "Aromaterapia",
+        "subpageLink": "./subpages/aromaTherapy.html"
+    }
+]

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+a:focus,
+button:focus{
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 15vh;    
+}
+.logo-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+}
+.logo-section img{
+    width: 150px;
+    margin-left: 55px;
+}
+.menu-section{
+    display: flex;
+    margin-right: 80px;
+}
+.menu-hamburger-icon{
+    display: none;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    margin-right: 50px;
+}
+.nav-list ul li{
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    margin-left: 18px;
+}
+.nav-list ul li a{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    color: #90723c;
+    cursor: pointer;
+}
+.nav-list ul li a:before,
+.nav-list ul li a:after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    background: #90723c;
+}
+.nav-list ul li a:before{
+    left: 0; 
+}
+.nav-list ul li a:after{
+    right: 0;
+    background: #90723c;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.nav-list ul li a:hover:before {
+    background: #90723c;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.nav-list ul li a:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
+.shopping-basket-container{
+    position: relative;
+    cursor: pointer;
+}
+.shopping-basket .fa-basket-shopping{
+    color: #90723c;
+    font-size: 26px;
+}
+.items-count{
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+}
+@media screen and (max-width: 900px){
+    header{
+        background-color: #90723c;
+    }
+    .header-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .logo-section{
+        width: 100%;
+    }
+    .logo-section img{
+        width: 100px;
+        margin-left: 25px;
+    }
+    .logo-section .menu-hamburger-icon{
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+    .menu-hamburger-icon .fa-bars{
+        font-size: 25px;
+        margin-right: 75px;
+        cursor: pointer;
+    }
+    .nav-list li{
+        width: 100%;
+        padding: 10px 0;
+    }
+    .nav-list ul li a{
+        text-align: right;
+        color: #000;
+    }
+    .nav-list ul li a:before,
+    .nav-list ul li a:after{
+        display: none;
+    }
+    .hide{
+        justify-content: end;
+        width: 100%;
+        height: 0px;
+        right: 0;
+        overflow: hidden;
+        transition: all linear 0.2s;
+        position: absolute;
+        top: 100px;
+        background-color: #90723c;
+        z-index: 10;
+    }
+    .show{
+        height: 210px;
+        transition: all linear 0.2s;
+        overflow: hidden;
+        position: absolute;
+        top: 100px;
+        background-color: #90723c;
+        z-index: 10;
+    }
+    .shopping-basket-container{
+        position: absolute;
+        right: 30px;
+        top: 6%;
+
+    }
+    .shopping-basket .fa-basket-shopping{
+        color: #000;
+        font-size: 25px;
+    }
+}
+
+

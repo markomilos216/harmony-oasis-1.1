@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="8MuXceRZa6kWPx9wANZDTlpJPd7z6psfCti-9Nrg6Rk">
+    <meta name="description" content="Uvoľnite sa v masážnom salóne Harmony & Oasis v Ružomberku. Ponúkame relaxačné, športové aj zdravotné masáže v príjemnom prostredí. Objednajte sa ešte dnes!">
+    <script src="https://kit.fontawesome.com/6d664e133f.js" crossorigin="anonymous" defer></script>
+    <link rel="website icon" type="svg" href="images/logo.svg">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="canonical" href="https://www.harmonyoasis.sk/"/>
+    <title>Masážny salón Ružomberok | Harmony & Oasis</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Harmony&Oasis Ružomberok">
+                </a>
+                <button class="menu-hamburger-icon" aria-label="Hlavné menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <div class="menu-section">
+                <nav class="nav-list hide">
+                    <ul>
+                        <li><a href="pages/massagesOffer.html">Ponuka masáží</a></li>
+                        <li><a href="pages/specialPackages.html">Baličky a poukážky</a></li>
+                        <li><a href="pages/priceList.html">Cenník</a></li>
+                        <li><a href="#contact-section">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="shopping-basket-container">
+                    <a href="./pages/basket.html" class="shopping-basket">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span class="items-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="home-banner">
+            <aside class="left-side-banner hidden-banner-heading">
+                <h1 class="main-heading">Masérske služby</h1>
+                <h1 class="main-heading company-name">Harmony & Oasis</h1>
+            </aside>
+            <aside class="right-side-banner hidden-banner-img">
+                <img src="images/banner-image.png" alt="main-banner">
+            </aside>
+        </section>
+        <div class="border-line"></div>
+        <section class="offer-section">
+            <h2 class="offer-section-heading hidden-offer">Ponuka masáží</h2>
+            <div class="offer-section-container">
+                <a href="./pages/subpages/aromaTherapy.html" class="offer-box hidden-offer">
+                    <img src="images/essencial-oils.png" alt="Esenciálne oleje">
+                    <h3>Aromaterapia</h3>
+                    <p>Aromaterapia zahŕňa používanie esenciálnych olejov a iných prírodných aromatických látok pre fyzickú, psychickú a duševnú pohodu.</p>
+                </a>
+                <a href="./pages/subpages/chocolateMassage.html" class="offer-box hidden-offer">
+                    <img src="images/chocolate-massage.png" alt="Čokoládová masáž">
+                    <h3>Čokoládová masáž</h3>
+                    <p>Čokoládová masáž nielen vyhladzuje, omladzuje a skrášľuje pokožku celého tela, ale taktiež výborne pôsobí na psychiku a zlepšuje náladu.</p>
+                </a>
+                <a href="./pages/subpages/relaxingMassage.html" class="offer-box hidden-offer">
+                    <img src="images/relax-massage.png" alt="Relaxačná masáž">
+                    <h3>Relaxačná masáž</h3>
+                    <p>Ide o dotyky, trenie, systematické hladenie a tlaky, ktoré sú aplikované plynule po celom tele.</p>
+                </a>
+            </div>
+            <div class="offer-link-button-container hidden-offer">
+                <a href="./pages/massagesOffer.html" class="offer-link-button">Ponuka masáží</a>
+            </div>
+        </section>
+        <article class="quote-banner-container">
+            <div class="banner-box">
+                <aside class="left-side-contact">
+                    <img src="images/left-side-form-img.png" alt="Massage towels">
+                </aside>
+                <aside class="right-side-quote">
+                    <h2 class="quote">„Masáž nie je len luxus, je to cesta k uzdraveniu a relaxácii.“</h2>
+                </aside>
+            </div>
+        </article>
+        <div class="border-line"></div>
+        <section class="contact-section" id="contact-section">
+            <h2 class="contact-section-heading">Kontakt</h2>
+            <div class="contact-section-box">
+                <section class="form-container">
+                    <form method="POST" id="form">
+                        <input type="hidden" name="access_key" value="cdf362a0-0913-46f3-8bf9-94c184f07dca">
+                        <label for="name" class="required">Meno:</label>
+                        <input type="text" name="name" id="name">
+                        <span class="name-warning"></span>
+                        <label for="surname" class="required">Priezvisko:</label>
+                        <input type="text" name="surname" id="surname">
+                        <span class="surname-warning"></span>
+                        <label for="email" class="required">Email:</label>
+                        <input type="email" name="email" id="email">
+                        <span class="email-warning"></span>
+                        <label for="phone" class="required">Tel. číslo:</label>
+                        <input type="text" name="phone" id="phone">
+                        <span class="phone-warning"></span>
+                        <label for="note" class="required">Poznámka:</label>
+                        <textarea name="note" id="note"></textarea>
+                        <span class="note-warning"></span>
+                        <div class="personal-data-container">
+                            <input type="checkbox" name="personal-data-agreement" id="personal-data-agreement">
+                            <label for="personal-data-agreement" class="required personal-data-text">Súhlasím so spracovaním osobných údajov</label>
+                        </div>
+                        <span class="personal-data-warning"></span>
+                        <button id="send-order">Odoslať</button>
+                    </form>
+                </section>
+                <section class="more-contact-info">
+                    <div class="more-info-container">
+                        <a href="tel:+421907223526" class="direct-number contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+421 907 223 526</p>
+                        </a>
+                        <a href="mailto:Harmony.Oasis.Marko@gmail.com" class="direct-email contact">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>Harmony.Oasis.Marko@gmail.com</p>
+                        </a>
+                        <a target="_blank" href="https://www.google.sk/maps/place/Harmony%26Oasis/@49.0794874,19.304184,19z/data=!4m16!1m9!3m8!1s0x4715a794eef89b9f:0x47cd1c4f47c92ad!2sHarmony%26Oasis!8m2!3d49.0794865!4d19.3048277!9m1!1b1!16s%2Fg%2F11v_9wbghl!3m5!1s0x4715a794eef89b9f:0x47cd1c4f47c92ad!8m2!3d49.0794865!4d19.3048277!16s%2Fg%2F11v_9wbghl?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D" class="direct-adress contact">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Podhora 48, Ružomberok</p>
+                        </a>
+                    </div>
+                    <img src="images/contact-img-boxes.png" alt="contact-image" class="contact-image"> 
+                </section>
+                <div class="popup-window">
+                    <p class="status-circle"></p>
+                    <h2 class="popup-heading"></h2>
+                    <p class="popup-message"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p class="copyright">&copy; Harmony&Oasis 2024</p>
+            <section class="social-icons">
+                <ul class="social-icons-list">
+                    <li><a href="https://www.facebook.com/profile.php?id=61554728084611" aria-label="Facebook Harmony & Oasis Ružomberok"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/harmony_oasis_/" aria-label="Instagram Harmony & Oasis Ružomberok"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+                <section class="personal-data-protection-container">
+                    <a href="./pages/personalDataProtection.html" class="personal-data-protection">Zásady ochrany osobných údajov</a>
+                </section>
+            </section>
+        </div>
+    </footer>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/indexForm.js"></script>
+    <script type="module" src="scripts/setNumberOfPackages.js"></script>
+</body>
+</html>

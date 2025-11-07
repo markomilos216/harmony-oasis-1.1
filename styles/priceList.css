@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+main{
+    font-family: "Poppins", sans-serif;
+}
+.price-list-heading{
+    text-align: center;
+    font-size: 38px;
+    text-shadow: 5px 5px 5px #ccc;
+    margin-top: 25px;
+}
+table{
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+thead tr th{
+    font-size: 20px;
+    text-align: left;
+    border-bottom: 2px solid #90723c;
+}
+thead tr th td{
+    padding: 0px 10px;
+}
+thead tr th:not(:nth-child(1)){
+    text-align: center;
+}
+tbody tr{
+    font-size: 18px;
+    border-bottom: 1px solid #90723c;
+}
+tbody tr td{
+    padding-top: 18px;
+}
+tbody tr td:not(:nth-child(1)){
+    text-align: center;
+}
+.extra-offer-massage{
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px #ccc;
+    margin-top: 75px;
+}
+@media screen and (max-width: 760px) {
+    .price-list-heading{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    table{
+        width: 80%;
+    }
+    thead tr th{
+        font-size: 15px;
+    }
+    tbody tr{
+        font-size: 14px;
+    }
+    .extra-offer-massage{
+        font-size: 22px;
+    }
+}

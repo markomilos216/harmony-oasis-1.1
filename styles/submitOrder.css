@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+main{
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+.send-order-main-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
+    position: relative;
+}
+.send-order-heading{
+    font-size: 35px;
+    padding: 0px 0px 45px;
+    text-align: center;
+    text-shadow: 5px 5px 5px #ccc;
+}
+.form-side form{
+    display: flex;
+    flex-direction: column;
+}
+.form-side .required,
+.form-side label{
+    position: relative;
+    font-size: 20px;
+}
+.form-side .required::after{
+    content: '*';
+    font-size: 16px;
+    color: red;
+    position: absolute;
+    margin-left: 3px; 
+}
+.form-side form input,
+.form-side form textarea{
+    width: 500px;
+    height: 35px;
+    font-size: 18px;
+    padding: 2px 5px;
+    outline: none;
+}
+.form-side form input:focus,
+.form-side form textarea:focus{
+    border: 2px solid #90723c;
+}
+.form-side form textarea{
+    width: 500px;
+    height: 150px;
+    resize: none;
+    font-family: "Poppins", sans-serif;
+}
+.form-side form span{
+    font-size: 13px;
+    color: red;
+    height: 21px;
+}
+.form-side form .customer-personal-data-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.form-side form .customer-personal-data-container input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin: 0; 
+    accent-color: #90723c; 
+    cursor: pointer; 
+}
+#send-customer-order{
+    display: block;
+    margin: 15px auto;
+    width: 30%;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #90723c;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#send-customer-order:hover{
+    background-color: rgba(144, 114, 60, 0.9);
+}
+.order-summary-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12px;
+}
+.order-summary-side table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 19px;
+}
+.order-summary-side table thead tr{
+    text-align: center;
+    border-bottom: 1px solid grey; 
+    background-color: #c3b59b;
+}
+.order-summary-side table thead tr th{
+    padding: 12px;
+}
+.order-summary-side table .order-summary-table-body tr td{
+    border-bottom: 1px solid grey;
+    vertical-align: middle;
+    text-align: center;
+    padding: 8px 0px;
+}
+.order-summary-side table .order-summary-table-body tr td:nth-child(2){
+    text-align: left;
+}
+.order-summary-side table .order-summary-table-body tr td img{
+    width: 100px;
+    max-height: 56px;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding-left: 5px;
+}
+.back-to-basket-btn{
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #90723c;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.back-to-basket-btn:hover{
+    background-color: rgba(144, 114, 60, 0.9);
+}
+.popup-window{
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, scale 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup-window .status-circle{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: -20px auto 20px;
+}
+.popup-heading{
+    font-size: 38px;
+    font-weight: bold;
+}
+.popup-message{
+    font-size: 18px;
+}
+@media screen and (max-width: 900px){
+    .send-order-heading{
+        padding-top: 40px;
+    }
+}
+@media screen and (max-width: 760px){
+    .send-order-main-container{
+        font-size: 70px;
+    }
+    .send-order-heading{
+        font-size: 25px;
+        padding-top: 40px;
+    }
+    .form-side .required,
+    .form-side label{
+        font-size: 17px;
+    }
+    .form-side form input,
+    .form-side form textarea{
+        width: 320px;
+        font-size: 15px;
+    }
+    .form-side form span{
+        font-size: 11px;
+    }
+    .form-side form .customer-personal-data-container{
+        gap: 4px;
+    }
+    .form-side form .customer-personal-data-container .customer-personal-data-text{
+        font-size: 13px;
+    }
+    .form-side form .customer-personal-data-container #customer-personal-data-agreement{
+        width: 15px;
+        height: 15px;
+    }
+    #send-customer-order{
+        width: 40%;
+    }
+    .order-summary-side{
+        max-width: 85%;
+    }
+    .order-summary-side table th,
+    .order-summary-side table td{
+        font-size: 13px;
+    }
+    .order-summary-side table  .product-description img{
+        width: 50px;
+        max-height: 28px;
+        padding-right: 8px;
+    }
+    .back-to-basket-btn{
+        font-size: 17px;
+    }
+}
