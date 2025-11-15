@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+main{
+    font-family: "Poppins", sans-serif;
+    margin: 20px 8% ;
+}
+.main-content{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+.main-heading{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.text-content h3:not(:first-child){
+    margin-top: 15px;
+}
+.text-content ul li{
+    margin: 6px 0 0 30px;
+    text-align: justify;
+}
+.text-content .button-container{
+    display: flex;
+    justify-content: center;
+}
+.text-content .button-container .order-link{
+    margin-top: 50px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #90723c;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.text-content .button-container .order-link:hover{
+    background-color: rgba(144, 114, 60, 0.9);
+}
+.img-and-offer-content{
+    display: flex;
+    flex-direction: column;
+}
+.img-and-offer-content img{
+    display: block;
+    width: clamp(400px, 50vw, 550px);
+    height: auto;
+    max-height: 610px;
+    box-shadow: #90723c 0px 0 15px 5px;
+}
+
+@media screen and (min-width: 1600px) {
+    .main-content{
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main-heading{
+        font-size: 35px;
+        margin-top: 50px;
+    }
+    .main-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .text-content{
+        margin-bottom: 50px;
+    }
+    .text-content .button-container .order-link{
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    
+}
