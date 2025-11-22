@@ -54,7 +54,6 @@ main{
         gap: 0;
     }
 }
-
 @media screen and (max-width: 1200px) {
     .main-heading{
         font-size: 35px;
@@ -73,7 +72,6 @@ main{
         padding: 12px 15px;
     }
 }
-
 @media screen and (max-width: 760px) {
     
 }

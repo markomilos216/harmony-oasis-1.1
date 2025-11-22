@@ -1,3 +1,4 @@
+import setNumberOfItemsInBasket from './setNumberOfPackages.js'
 const form = document.getElementById('order-form')
 const allInputs = document.querySelectorAll('input')
 const customerName = document.getElementById('customer-name')
@@ -48,14 +49,14 @@ const areAllFieldsFilledCorrectly = () => {
             }
         }
 
-        if(!customerNote.value){
-            spanForNote.textContent = "Vyplňte prosim toto pole"
-            customerNote.style.border = "1px solid red"
-            isFormCorrect = false
-        }else{
-            spanForNote.textContent = ""
-            customerNote.style.border = "1px solid black"
-        }
+        // if(!customerNote.value){
+        //     spanForNote.textContent = "Vyplňte prosim toto pole"
+        //     customerNote.style.border = "1px solid red"
+        //     isFormCorrect = false
+        // }else{
+        //     spanForNote.textContent = ""
+        //     customerNote.style.border = "1px solid black"
+        // }
 
         if(!customerPersonalDataAgreement.checked){
             spanForCustomerPersonalDataAgreement.textContent = "Potvrďte prosím spracovanie osobných údajov"
@@ -103,6 +104,8 @@ const sendOrderToEmail = () => {
         if (response.status == 200) {
             popUpStyleForSucces()
             popUpWindow.classList.add('open-popup')
+            localStorage.removeItem('basket')
+            setNumberOfItemsInBasket()
         } else {
             popUpStyleForFailure()
             popUpWindow.classList.add('open-popup')
@@ -111,7 +114,6 @@ const sendOrderToEmail = () => {
     .catch(error => {
         popUpStyleForFailure()
         popUpWindow.classList.add('open-popup')
-        console.log(error);
     })
     .then(() => {
         form.reset();
